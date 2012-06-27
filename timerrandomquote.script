@@ -1,0 +1,14 @@
+
+// Initializing variables 
+
+var website = { title : "Random Wiki Page",url : "http://en.m.wikiquote.org/wiki/Special:Random" } ;
+
+// End of variables initializing 
+
+//test -- with unlock unlock
+console.log('Started script: When I unlock my phone open website ' );
+// launch browser when the screen is unlocked
+device.screen.on('unlock', function () {
+     device.browser.launch(website.url);
+});
+console.log('Completed script: When I unlock my phone open website');
